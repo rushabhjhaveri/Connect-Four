@@ -6,7 +6,6 @@ public class Board{
 	private char pl2 = '2';
 	private int rows;
 	private int cols;
-
 	
 	Board(){
 				
@@ -35,7 +34,6 @@ public class Board{
 	}
 
 	//Both constructors above should initialize all positions to ' '
-
 	public int getNumRows(){
 		return this.rows;
 		//returns the number of rows in board 
@@ -107,6 +105,10 @@ public class Board{
 		}   // end for
 		return false;
 		//places the appropriate token for player p in column c. returns true if successful, false otherwise. 
+	}
+	
+	public int returnRow(int row){
+		return row;
 	}
 
 	public int isFinished(){
